@@ -1,0 +1,102 @@
+.app{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+
+    &_buttonStyle{
+        height: 40px;
+        justify-content: center;
+        margin-left: 24px;
+    }
+
+    &__wrapper{
+        // align-items: center;
+        width: 100%;
+        padding-top: 64px;
+        margin-left: 120px;
+        flex-direction: column;
+
+        &__content{
+            flex-direction: column;
+
+            &__form{
+                flex-direction: column;
+    
+                &__radioList{
+                    flex-direction: column;
+                }
+            }
+    
+            &__input{
+                
+                &_item{
+                    padding-left: 12px;
+                    width: 150px;
+                    border-radius: 24px;
+                }
+
+                &_text{
+                    font-size: 20px;
+                    margin-left: 12px;
+                }
+            }
+
+            &__optional{
+                flex-direction: column;
+                margin-top: 24px;
+
+                &__toggle{
+                    margin-bottom: 10px;
+
+                    &_switcher{
+                        margin: 0px 12px;
+                    }
+
+                    &_leftText{
+                        font-weight: 500;
+
+                        &_active{
+                            font-weight: 800;
+                        }
+                    }
+
+                    &_rightText{
+                        font-weight: 500;
+
+                        &_active{
+                            font-weight: 800;
+                        }
+                    }
+                }
+
+                &__calculate{
+                    padding: 12px 24px;
+                    margin-top: 24px;
+                    min-width: 400px;
+                    max-width: 600px;
+                    min-height: 50px;
+                    background-color: #FBF4DA;
+                    flex-direction: column;
+
+                    &__field{
+                        margin-top: 12px;
+                        font-weight: 800;
+
+                        span{
+                            margin: 0px 12px 0px 6px;
+                            font-weight: 800;
+                        }
+
+                        &_text{
+                            font-weight: 500;
+                        }
+                    }
+
+                    &__field:first-child{
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
